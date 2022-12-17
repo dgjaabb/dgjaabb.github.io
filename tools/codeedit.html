@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">coded()</script>
+<title>Code editor-在线代码编辑器 </title>
+</head>
+<meta charset='utf8'>
+<a href="index.html"><img src="images/home.JPG"></a>
+<a href="memu.html"><img src="images/game.jpg"></a>
+<hr>
+<body>
+<h2>代码编辑器 ver 0.4.2</h2>
+
+<div id = 'container' style="height: 500px; 1000px; bgcolor : #101010">
+<textarea autocomplete="off" id = "textareaCode" warp = "logical" spellcheck="false" stype="display:none;" style="height : 90%;width:39%; background-color: yellow; float: left" onkeypress="coded()"> 
+</textarea>
+<div id = 'textareaCoded' style="height : 90%; width : 49%; background-color: yellow; float: right" wrap="virtual">
+<p id = 'html_code'> 运行的结果会出现在这里（只支持html和css代码） </p>
+</div>
+<button type = 'button' id='bt' name = 'bt' onclick="coded()"> 运行 </button>
+</div>
+
+<script>
+function coded(){
+var strCode = document.getElementById("textareaCode").value;
+document.getElementById("html_code").innerHTML = strCode;
+}
+</script>
+<a href='https://dgjaabb.github.io/tools/jc'>html教程</a>
+</body>
+</html>
+
