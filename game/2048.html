@@ -202,7 +202,7 @@
   </div>
   <div id="gameover">
     <h1 id="Score2"></h1>
-    <a href="#" id="again" onclick="obj.gameStart()">Try again</a>
+    <a href="#" id="again" onclick="obj.gameStart()">重新开始</a>
   </div>
   <div id="buttons" width="300" height="40">
       <button class="styles" id="up">上</button>
@@ -371,12 +371,12 @@
         if (win == 1) { //通关
           $("game").style.display = "block";
           $("gameover").style.display = "block";
-          $("Score2").innerHTML = "You win!<br>Score:" + obj.score;
+          $("Score2").innerHTML = "你 胜利了!<br>分数:" + obj.score;
         }
         if (obj.isGameOver()) { //游戏失败
           $("game").style.display = "block";
           $("gameover").style.display = "block";
-          $("Score2").innerHTML = "GAME OVER!<br>Score:" + obj.score;
+          $("Score2").innerHTML = "游戏 结束!<br>分数:" + obj.score;
           console.log("gameover");
         }
       },
